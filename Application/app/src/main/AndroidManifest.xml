@@ -12,6 +12,12 @@
         android:theme="@style/Theme.ICare"
         tools:targetApi="31">
         <activity
+            android:name=".HardMode"
+            android:exported="false" />
+        <activity
+            android:name=".MediumMode"
+            android:exported="false" />
+        <activity
             android:name=".EasyMode"
             android:exported="false" />
         <activity

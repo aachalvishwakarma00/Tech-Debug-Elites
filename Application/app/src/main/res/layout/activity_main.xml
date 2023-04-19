@@ -4,50 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1E8F78"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/TxHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vision Exercise Game"
-        android:textSize="25dp"
-        android:background="@color/teal_200"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:textAlignment="center"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"/>
 
-    <ImageView
-        android:id="@+id/IV1"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/IMG1"
+        android:layout_width="364dp"
+        android:layout_height="380dp"
+        android:src="@drawable/eye"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TxHead"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:text="Eye Therapy"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_below="@id/IMG1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:text="A Helpful Game for patients suffering from Amblyopia"
+        android:textColor="#ABE0D5"
+        android:textSize="16dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/BT1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/IV1"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="Start game"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:layout_below="@id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:text="Start Game"
-        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFA8"
         android:onClick="SelectDiff"/>
 
     <Button
-        android:id="@+id/BT2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="View Score"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
         android:layout_below="@id/BT1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="View Score"
-        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFA8"
         android:onClick="ViewScore"/>
 
 

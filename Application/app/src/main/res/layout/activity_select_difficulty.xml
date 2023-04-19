@@ -1,56 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelectDifficulty">
+    android:background="#1E8F78">
 
     <TextView
-        android:id="@+id/TxHead"
+        android:id="@+id/myText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select a Difficulty"
-        android:textSize="25dp"
-        android:background="@color/teal_200"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:textAlignment="center"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:text="Select Game Difficulty"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/BT1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/TxHead"
+        android:id="@+id/button1"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="EASY"
+        android:textSize="19dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:text="Easy"
-        android:textSize="20dp"
+        android:backgroundTint="#AAFF00"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/myText"
+        android:layout_marginTop="200dp"
         android:onClick="Easy"/>
 
     <Button
-        android:id="@+id/BT2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/BT1"
+        android:id="@+id/button2"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/button1"
+        android:text="MEDIUM"
+        android:textSize="19dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp"
-        android:text="Medium"
-        android:textSize="20dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="#F55D32"
         android:onClick="Medium"/>
 
     <Button
-        android:id="@+id/BT3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/BT2"
+        android:id="@+id/button3"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/button2"
+        android:text="HARD"
+        android:textSize="19dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp"
-        android:text="Hard"
-        android:textSize="20dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="#F6230F"
         android:onClick="Hard"/>
+
+
+
 
 </RelativeLayout>
