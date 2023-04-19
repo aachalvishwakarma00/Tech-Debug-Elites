@@ -20,12 +20,12 @@ public class SelectDifficulty extends AppCompatActivity {
     }
 
     public void Medium(View view){
-        Intent medium = new Intent(SelectDifficulty.this, SelectDifficulty.class);
+        Intent medium = new Intent(SelectDifficulty.this, MediumMode.class);
         startActivity(medium);
     }
 
     public void Hard(View view){
-        Intent hard = new Intent(SelectDifficulty.this, SelectDifficulty.class);
+        Intent hard = new Intent(SelectDifficulty.this, HardMode.class);
         startActivity(hard);
     }
 
