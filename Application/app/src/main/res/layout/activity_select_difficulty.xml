@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectDifficulty">
+
+    <TextView
+        android:id="@+id/TxHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Difficulty"
+        android:textSize="25dp"
+        android:background="@color/teal_200"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:id="@+id/BT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TxHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Easy"
+        android:textSize="20dp"
+        android:onClick="Easy"/>
+
+    <Button
+        android:id="@+id/BT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BT1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Medium"
+        android:textSize="20dp"
+        android:onClick="Medium"/>
+
+    <Button
+        android:id="@+id/BT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BT2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Hard"
+        android:textSize="20dp"
+        android:onClick="Hard"/>
+
+</RelativeLayout>
