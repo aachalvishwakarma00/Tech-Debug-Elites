@@ -1,23 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewScore">
+    android:orientation="vertical"
+    android:background="#1E8F78">
 
     <TextView
-        android:id="@+id/TxHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View Score"
-        android:textSize="25dp"
-        android:background="@color/teal_200"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:textAlignment="center"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"/>
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="View High Score "
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
 
-</RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:padding="16dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:id="@+id/tl1">
+
+        <!-- Define the table header row -->
+        <TableRow>
+
+            <TextView
+                android:padding="4dp"
+                android:text="Mode"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:padding="4dp"
+                android:text="Date"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:padding="4dp"
+                android:text="Score"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+        </TableRow>
+
+        <!-- Define the first data row -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TxMode"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/TxDate"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/TxScore"
+                android:padding="4dp"/>
+        </TableRow>
+
+        <!-- Define the second data row -->
+        <TableRow>
+
+            <TextView
+                android:padding="4dp"
+                 />
+
+            <TextView
+                android:padding="4dp"
+                 />
+
+            <TextView
+                android:padding="4dp"
+               />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
